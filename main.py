@@ -11,7 +11,7 @@ app = FastAPI()
 
 # === [Konfigurasi] ===
 source = 0  # atau 'rtsp://...'
-model_path = "model/yolov8n.pt"
+model_path = "model/yolo11n.pt"
 hls_output_path = "stream/stream.m3u8"
 
 # === [Setup Folder Output] ===
@@ -36,7 +36,7 @@ def start_yolo_stream():
         '-vcodec', 'rawvideo',
         '-pix_fmt', 'bgr24',
         '-s', f'{width}x{height}',
-        '-r', str(fps),
+        '-r', '25',
         '-i', '-',
         '-c:v', 'libx264',
         '-preset', 'veryfast',
