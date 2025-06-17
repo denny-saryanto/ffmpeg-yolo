@@ -13,10 +13,10 @@ app = FastAPI()
 source = 0  # atau 'rtsp://...'
 model_path = "model/yolov8n.pt"
 hls_output_path = "stream/stream.m3u8"
-hls_folder = "stream"
 
 # === [Setup Folder Output] ===
-os.makedirs(hls_folder, exist_ok=True)
+os.makedirs("stream", exist_ok=True)
+os.makedirs("model", exist_ok=True)
 
 # === [Inisialisasi Model YOLO] ===
 model = YOLO(model_path)
