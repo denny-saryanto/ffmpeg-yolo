@@ -1,2 +1,4 @@
 ultralytics
-cv2
+opencv-python
+fastapi
+uvicorn
