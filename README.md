@@ -39,7 +39,7 @@ cd ffmpeg-yolo
 
 ```bash
 python -m venv env
-.\env\Scriptsctivate      # Windows
+.\env\Scripts\activate      # Windows
 # source env/bin/activate  # Linux/Mac
 ```
 
